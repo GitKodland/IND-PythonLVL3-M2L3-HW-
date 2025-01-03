@@ -1,0 +1,1 @@
+token = "Masukkan token bot Anda di sini"
