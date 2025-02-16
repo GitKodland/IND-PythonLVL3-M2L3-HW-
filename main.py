@@ -39,10 +39,10 @@ async def on_interaction(interaction):
 
     custom_id = interaction.data["custom_id"]
     if custom_id.startswith("correct"):
-        await interaction.response.send_message("Correct answer!")
+        await interaction.response.send_message("Jawaban benar!")
         points[user_id] += 1
     elif custom_id.startswith("wrong"):
-        await interaction.response.send_message("Wrong answer!")
+        await interaction.response.send_message("Jawaban salah!")
 
     user_responses[user_id] += 1
     if user_responses[user_id] > len(quiz_questions) - 1:
